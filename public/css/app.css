@@ -190,11 +190,18 @@ h1.sh1{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
 .field{display:flex;flex-direction:column;gap:6px}
 .field label{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#aaa;font-size:11px}
 .field input,.field select,.field textarea{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:12px 16px;color:#fff;font-family:'Source Serif 4',serif;font-size:14px;min-height:48px;transition:border-color .2s;outline:none;width:100%}
-.field select{cursor:pointer;-webkit-appearance:menulist-button;appearance:menulist-button;position:relative;z-index:10;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23fff' d='M6 9L1 4h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:40px}
+.field select{
+  cursor:pointer;
+  -webkit-appearance:auto;
+  appearance:auto;
+  position:relative;
+  z-index:10;
+  pointer-events:auto;
+}
 .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--orange)}
 .field input::placeholder,.field textarea::placeholder{color:#666}
 .field textarea{resize:none}
-.field select option{background:var(--navy);color:#fff;padding:8px}
+.field select option{background:var(--navy);color:#fff}
 .callback-options{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .callback-opt{border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:14px 12px;text-align:center;cursor:pointer;transition:all .2s}
 .callback-opt:hover,.callback-opt.selected{border-color:var(--orange);background:rgba(232,98,42,.1)}

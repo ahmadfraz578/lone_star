@@ -33,12 +33,17 @@
   function startTimer() { timer = setInterval(nextReview, 5000); }
   function stopTimer() { clearInterval(timer); }
 
-  document.getElementById('next-review').addEventListener('click', function() { stopTimer(); nextReview(); startTimer(); });
-  document.getElementById('prev-review').addEventListener('click', function() { stopTimer(); prevReview(); startTimer(); });
-  document.querySelectorAll('.dot').forEach(function(d) {
-    d.addEventListener('click', function() { stopTimer(); updateReview(parseInt(this.dataset.idx)); startTimer(); });
-  });
-  startTimer();
+  // Review carousel (only on homepage)
+  var nextReviewBtn = document.getElementById('next-review');
+  var prevReviewBtn = document.getElementById('prev-review');
+  if (nextReviewBtn && prevReviewBtn) {
+    nextReviewBtn.addEventListener('click', function() { stopTimer(); nextReview(); startTimer(); });
+    prevReviewBtn.addEventListener('click', function() { stopTimer(); prevReview(); startTimer(); });
+    document.querySelectorAll('.dot').forEach(function(d) {
+      d.addEventListener('click', function() { stopTimer(); updateReview(parseInt(this.dataset.idx)); startTimer(); });
+    });
+    startTimer();
+  }
 
   // Navigation is now handled by Laravel routes, but we keep this for any remaining data-page attributes
   // that might be used for smooth scrolling or other interactions
@@ -53,14 +58,28 @@
     });
   });
 
-  document.querySelectorAll('.faq-q').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var item = this.closest('.faq-item');
-      var isOpen = item.classList.contains('open');
-      item.closest('.faq-list').querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
-      if (!isOpen) item.classList.add('open');
+  function initFAQ() {
+    document.querySelectorAll('.faq-q').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var item = this.closest('.faq-item');
+        if (!item) return;
+        var isOpen = item.classList.contains('open');
+        var list = item.closest('.faq-list');
+        if (list) {
+          list.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+        }
+        if (!isOpen) item.classList.add('open');
+      });
     });
-  });
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initFAQ);
+  } else {
+    initFAQ();
+  }
 
   document.querySelectorAll('.callback-opt').forEach(function(opt) {
     opt.addEventListener('click', function() {
@@ -68,9 +87,9 @@
       this.classList.add('selected');
       var input = document.getElementById('preferred_callback_time');
       if (input) {
-        var value = this.dataset.callback || this.querySelector('.callback-opt-label')?.textContent.trim() || this.textContent.trim();
+        var label = this.querySelector('.callback-opt-label');
+        var value = this.dataset.callback || (label ? label.textContent.trim() : this.textContent.trim());
         input.value = value;
-        console.log('Preferred callback time set to:', value); // Debug log
       }
     });
   });
@@ -92,11 +111,15 @@
     entries.forEach(function(e) {
       if (e.isIntersecting && !counted) {
         counted = true;
-        animateCounter(document.getElementById('c1'), 500, 0, 2000);
+        var c1 = document.getElementById('c1');
+        var c2 = document.getElementById('c2');
+        var c3 = document.getElementById('c3');
+        var c4 = document.getElementById('c4');
+        if (c1) animateCounter(c1, 500, 0, 2000);
         // Texas has 254 counties (use as a statewide coverage indicator)
-        animateCounter(document.getElementById('c2'), 254, 0, 2000);
-        animateCounter(document.getElementById('c3'), 15, 0, 2000);
-        animateCounter(document.getElementById('c4'), 4.9, 1, 2000);
+        if (c2) animateCounter(c2, 254, 0, 2000);
+        if (c3) animateCounter(c3, 15, 0, 2000);
+        if (c4) animateCounter(c4, 4.9, 1, 2000);
       }
     });
   }, {threshold: 0.3});
