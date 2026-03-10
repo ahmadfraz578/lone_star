@@ -1,8 +1,6 @@
-@extends('layouts.app')
+<?php $__env->startSection('title', 'Licensed Electrician in Texas — Panel Upgrades, EV Chargers, 24/7 Emergency'); ?>
 
-@section('title', 'Licensed Electrician in Texas — Panel Upgrades, EV Chargers, 24/7 Emergency')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
 <section class="service-hero">
   <div class="service-hero-bg"><img data-img="ELEC" src="" alt="Licensed electrician panel upgrade Texas"/><div class="service-hero-overlay"></div></div>
   <div class="service-hero-content"><div style="max-width:660px">
@@ -10,7 +8,7 @@
     <h1 class="sh1">LICENSED ELECTRICIAN IN TEXAS</h1>
     <p class="sh1-sub">Panel upgrades · Rewiring · EV Chargers · Emergency Electrical · 24/7</p>
     <p class="sh1-body">From panel upgrades to emergency troubleshooting, we handle electrical work the right way: code-compliant, clean installs, and clear pricing. When Texas needs us, we’re ready.</p>
-    <div class="sh1-ctas"><a href="{{ route('quote') }}" class="btn-hero-orange">Get a Free Electrical Quote <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a><a href="tel:7130000000" class="btn-hero-green">📞 (713) 000-0000</a></div>
+    <div class="sh1-ctas"><a href="<?php echo e(route('quote')); ?>" class="btn-hero-orange">Get a Free Electrical Quote <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a><a href="tel:7130000000" class="btn-hero-green">📞 (713) 000-0000</a></div>
   </div></div>
 </section>
 <section class="section warm"><div class="section-inner">
@@ -36,5 +34,7 @@
   </div>
   <div class="faq-bottom"><div class="faq-bottom-text"><h3>Still have questions?</h3><p>We answer every call — including evenings and weekends.</p></div><a href="tel:7130000000" class="btn-green">📞 Call (713) 000-0000</a></div>
 </div></div>
-@include('pages.partials.quote-form', ['serviceType' => 'Electrical'])
-@endsection
+<?php echo $__env->make('pages.partials.quote-form', ['serviceType' => 'Electrical'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/ahmad/Downloads/new lone star/lone_star/resources/views/pages/electrical.blade.php ENDPATH**/ ?>

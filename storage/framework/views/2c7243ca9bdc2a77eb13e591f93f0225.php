@@ -1,8 +1,6 @@
-@extends('layouts.app')
+<?php $__env->startSection('title', 'Emergency Plumber in Texas — Leak Repair, Drain Cleaning, 24/7 Flood Response'); ?>
 
-@section('title', 'Emergency Plumber in Texas — Leak Repair, Drain Cleaning, 24/7 Flood Response')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
 <section class="service-hero">
   <div class="service-hero-bg"><img data-img="PLUMB" src="" alt="Emergency plumber Texas pipe repair"/><div class="service-hero-overlay"></div></div>
   <div class="service-hero-content"><div style="max-width:660px">
@@ -10,7 +8,7 @@
     <h1 class="sh1">EMERGENCY PLUMBER IN TEXAS</h1>
     <p class="sh1-sub">Leak repair · Drain cleaning · Water heaters · Sewer lines · 24/7 Flood Response</p>
     <p class="sh1-body">Leaks, clogs, water heaters, and sewer issues — handled fast with clear communication and professional work. When Texas needs us, we answer 24/7.</p>
-    <div class="sh1-ctas"><a href="{{ route('quote') }}" class="btn-hero-orange">Get a Free Plumbing Quote <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a><a href="tel:7130000000" class="btn-hero-green">📞 (713) 000-0000</a></div>
+    <div class="sh1-ctas"><a href="<?php echo e(route('quote')); ?>" class="btn-hero-orange">Get a Free Plumbing Quote <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a><a href="tel:7130000000" class="btn-hero-green">📞 (713) 000-0000</a></div>
   </div></div>
 </section>
 <section class="section warm"><div class="section-inner">
@@ -26,5 +24,7 @@
     <div class="si-card emergency"><div class="emergency-badge">24/7</div><div class="si-icon red-icon"><svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div><div class="si-title" style="color:#C0392B">24/7 Emergency Flood Response</div><p class="si-desc">Burst pipe? Flood damage? Sewage backup? 24 hours a day, 7 days a week. Fast emergency response when you need it most.</p></div>
   </div>
 </div></section>
-@include('pages.partials.quote-form', ['serviceType' => 'Plumbing'])
-@endsection
+<?php echo $__env->make('pages.partials.quote-form', ['serviceType' => 'Plumbing'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/ahmad/Downloads/new lone star/lone_star/resources/views/pages/plumbing.blade.php ENDPATH**/ ?>

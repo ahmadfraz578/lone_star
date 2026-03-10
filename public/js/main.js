@@ -66,6 +66,10 @@
     opt.addEventListener('click', function() {
       this.closest('.callback-options').querySelectorAll('.callback-opt').forEach(function(o) { o.classList.remove('selected'); });
       this.classList.add('selected');
+      var input = document.getElementById('preferred_callback_time');
+      if (input) {
+        input.value = this.dataset.callback || this.textContent.trim();
+      }
     });
   });
 

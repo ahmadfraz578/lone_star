@@ -1,7 +1,7 @@
 {
     "name": "lonestar/home-services",
     "type": "project",
-    "description": "Lone Star Home Services - Houston Electrical, Plumbing & Roofing",
+    "description": "Lone Star Solutions - Electrical, Plumbing & Roofing Across Texas",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {

@@ -1,6 +1,6 @@
-# Lone Star Home Services - Laravel Application
+# Lone Star Solutions - Laravel Application
 
-This is a Laravel conversion of the Lone Star Home Services website, a Houston-based home services company offering electrical, plumbing, and roofing services.
+This is a Laravel conversion of the Lone Star Solutions website, offering electrical, plumbing, and roofing services across Texas.
 
 ## Features
 

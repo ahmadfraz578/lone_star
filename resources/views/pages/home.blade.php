@@ -1,26 +1,26 @@
 @extends('layouts.app')
 
-@section('title', 'Lone Star Home Services — Houston Electrical, Plumbing & Roofing')
+@section('title', 'Lone Star Solutions — Electrical, Plumbing & Roofing Across Texas')
 
 @section('content')
 <section class="hero">
   <div class="hero-bg">
-    <img data-img="ELEC" src="" alt="Licensed home services team serving Houston TX"/>
+    <img data-img="ELEC" src="" alt="Reliable industrial and residential services across Texas"/>
     <div class="hero-overlay"></div><div class="hero-overlay2"></div>
   </div>
   <div class="hero-content">
-    <div class="hero-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="#E8622A"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>500+ Five-Star Reviews · Houston, TX</div>
-    <h1 class="hero-h1"><span class="line1">Houston's</span><span class="line2">Home Services</span><span class="line3">Team</span></h1>
-    <p class="hero-sub">Electrical · Plumbing · Roofing — Licensed, Insured & On-Call 24/7</p>
-    <p class="hero-body">500+ five-star reviews across greater Houston. Same-day service in most cases. Emergency response around the clock. One call handles it all.</p>
+    <div class="hero-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="#E8622A"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Statewide Coverage · Texas</div>
+    <h1 class="hero-h1"><span class="line1">Reliable</span><span class="line2">Industrial &</span><span class="line3">Residential Services</span></h1>
+    <p class="hero-sub">When Texas Needs Us</p>
+    <p class="hero-body">Electrical · Plumbing · Roofing — licensed, insured, and ready 24/7. Fast response, clear pricing, and professional work done right.</p>
     <div class="hero-ctas">
       <a href="{{ route('quote') }}" class="btn-hero-orange">Get a Free Quote <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
       <a href="tel:7130000000" class="btn-hero-green">📞 (713) 000-0000</a>
     </div>
     <div class="hero-trust">
       <div class="trust-dot">Licensed Master Electrician</div>
-      <div class="trust-dot">No Trip Fee Within 50 Miles</div>
-      <div class="trust-dot">We Answer at 3AM</div>
+      <div class="trust-dot">Whole Texas Area Coverage</div>
+      <div class="trust-dot">24/7 Emergency Response</div>
       <div class="trust-dot">Free Estimates</div>
     </div>
   </div>
@@ -30,29 +30,29 @@
 <div class="trust-strip">
   <div class="trust-grid">
     <div class="trust-badge"><div class="trust-icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><div class="trust-label">Licensed & Insured</div><div class="trust-sub">Texas State Certified</div></div></div>
-    <div class="trust-badge"><div class="trust-icon-wrap"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div><div class="trust-label">500+ Five-Star Reviews</div><div class="trust-sub">Across Greater Houston</div></div></div>
+    <div class="trust-badge"><div class="trust-icon-wrap"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div><div class="trust-label">5-Star Rated</div><div class="trust-sub">Trusted Across Texas</div></div></div>
     <div class="trust-badge"><div class="trust-icon-wrap"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div><div class="trust-label">Same-Day Service</div><div class="trust-sub">24/7 Emergency Response</div></div></div>
-    <div class="trust-badge"><div class="trust-icon-wrap"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="trust-label">100-Mile Radius</div><div class="trust-sub">40+ Houston-Area Cities</div></div></div>
+    <div class="trust-badge"><div class="trust-icon-wrap"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="trust-label">Whole Texas Area</div><div class="trust-sub">Statewide Coverage</div></div></div>
   </div>
 </div>
 
 <section class="section warm">
   <div class="section-inner">
-    <div class="section-head"><div class="accent-line"></div><h2 class="sh">WHAT WE FIX — FAST</h2><p class="sh-sub">Three essential home services. One trusted Houston team. Licensed professionals for electrical, plumbing, and roofing — with a single number to call.</p></div>
+    <div class="section-head"><div class="accent-line"></div><h2 class="sh">WHAT WE FIX — FAST</h2><p class="sh-sub">Industrial and residential essentials — handled by one Texas team. Licensed professionals for electrical, plumbing, and roofing with a single number to call.</p></div>
     <div class="cards-grid">
       <a href="{{ route('electrical') }}" class="service-card">
-        <div class="card-img"><img data-img="ELEC" src="" alt="Licensed electrician panel upgrade Houston TX" loading="lazy"/><div class="card-img-overlay"></div><div class="card-badge">Panel Upgrades from $1,200</div></div>
-        <div class="card-body"><div class="card-title-row"><div class="card-icon"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div class="card-title">Electrical Services</div></div><p class="card-desc">Panel upgrades, EV charger installs, rewiring, and 24/7 emergency repairs. Houston homes built before 1990 often have undersized panels that can't handle modern AC loads.</p><span class="card-cta">See Electrical Services <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div>
+        <div class="card-img"><img data-img="ELEC" src="" alt="Licensed electrician panel upgrade Texas" loading="lazy"/><div class="card-img-overlay"></div><div class="card-badge">Panel Upgrades from $1,200</div></div>
+        <div class="card-body"><div class="card-title-row"><div class="card-icon"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div class="card-title">Electrical Services</div></div><p class="card-desc">Panel upgrades, EV charger installs, rewiring, and 24/7 emergency repairs. Clean installs, code-compliant work, and clear pricing from start to finish.</p><span class="card-cta">See Electrical Services <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div>
         <div class="card-bottom-line"></div>
       </a>
       <a href="{{ route('plumbing') }}" class="service-card">
-        <div class="card-img"><img data-img="PLUMB" src="" alt="Emergency plumber Houston TX" loading="lazy"/><div class="card-img-overlay"></div><div class="card-badge">Emergency Response Available</div></div>
-        <div class="card-body"><div class="card-title-row"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div><div class="card-title">Plumbing Services</div></div><p class="card-desc">Leak repair, drain cleaning, water heater installation, sewer line work, and 24/7 emergency flood response. Houston clay soil shifts constantly — it's hard on pipes.</p><span class="card-cta">See Plumbing Services <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div>
+        <div class="card-img"><img data-img="PLUMB" src="" alt="Emergency plumber Texas" loading="lazy"/><div class="card-img-overlay"></div><div class="card-badge">Emergency Response Available</div></div>
+        <div class="card-body"><div class="card-title-row"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div><div class="card-title">Plumbing Services</div></div><p class="card-desc">Leak repair, drain cleaning, water heater installs, sewer line work, and 24/7 emergency response. Fast diagnostics, clean work, and no runaround.</p><span class="card-cta">See Plumbing Services <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div>
         <div class="card-bottom-line"></div>
       </a>
       <a href="{{ route('roofing') }}" class="service-card">
-        <div class="card-img"><img data-img="ROOF" src="" alt="Roofing contractor Houston TX storm damage" loading="lazy"/><div class="card-img-overlay"></div><div class="card-badge">Free Storm Inspections</div></div>
-        <div class="card-body"><div class="card-title-row"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><div class="card-title">Roofing Services</div></div><p class="card-desc">Full roof replacements, storm and hail damage repair, same-day emergency tarping, and insurance claim assistance. Houston sees 4–6 named storms per season.</p><span class="card-cta">See Roofing Services <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div>
+        <div class="card-img"><img data-img="ROOF" src="" alt="Roofing contractor Texas storm damage" loading="lazy"/><div class="card-img-overlay"></div><div class="card-badge">Free Storm Inspections</div></div>
+        <div class="card-body"><div class="card-title-row"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><div class="card-title">Roofing Services</div></div><p class="card-desc">Full roof replacements, storm and hail damage repair, same-day emergency tarping, and insurance claim assistance. We document damage and make the process easy.</p><span class="card-cta">See Roofing Services <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div>
         <div class="card-bottom-line"></div>
       </a>
     </div>
@@ -62,16 +62,16 @@
 <div class="counters-section">
   <div class="counters-bg"></div>
   <div class="counters-grid">
-    <div class="counter-item"><div class="counter-num"><span id="c1">0</span><span class="suffix">+</span></div><div class="counter-label">Jobs Completed</div><div class="counter-sub">Across greater Houston</div></div>
-    <div class="counter-item"><div class="counter-num"><span id="c2">0</span></div><div class="counter-label">Houston-Area Cities</div><div class="counter-sub">100-mile service radius</div></div>
-    <div class="counter-item"><div class="counter-num"><span id="c3">0</span><span class="suffix">+</span></div><div class="counter-label">Years Serving Houston</div><div class="counter-sub">Founded in Houston</div></div>
+    <div class="counter-item"><div class="counter-num"><span id="c1">0</span><span class="suffix">+</span></div><div class="counter-label">Jobs Completed</div><div class="counter-sub">Across Texas</div></div>
+    <div class="counter-item"><div class="counter-num"><span id="c2">0</span></div><div class="counter-label">Texas Service Areas</div><div class="counter-sub">Whole Texas coverage</div></div>
+    <div class="counter-item"><div class="counter-num"><span id="c3">0</span><span class="suffix">+</span></div><div class="counter-label">Years Serving Texas</div><div class="counter-sub">Built for Texas</div></div>
     <div class="counter-item"><div class="counter-num"><span id="c4">0</span></div><div class="counter-label">Stars on Google</div><div class="counter-sub">Average review rating</div></div>
   </div>
 </div>
 
 <div class="reviews-section">
   <div class="section-inner">
-    <div class="section-head" style="margin-bottom:40px"><div class="accent-line"></div><h2 class="sh light">WHAT HOUSTON HOMEOWNERS SAY</h2><p class="sh-sub light">Real reviews from real neighbors — Katy, Pearland, The Woodlands, Sugar Land, Friendswood.</p></div>
+    <div class="section-head" style="margin-bottom:40px"><div class="accent-line"></div><h2 class="sh light">WHAT TEXAS HOMEOWNERS SAY</h2><p class="sh-sub light">Real reviews from real people across the state.</p></div>
     <div class="review-card-wrap">
       <div class="review-card" id="review-card">
         <div class="review-stars"><svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg class="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
@@ -106,13 +106,13 @@
 <div class="home-cta">
   <div class="home-cta-inner">
     <div class="cta-badge"><span class="pulse"></span>Available Right Now</div>
-    <h2 class="cta-h2">Ready When <span>Houston</span> Needs Us</h2>
-    <p class="cta-body">Whether it's a tripped breaker at 2AM, a burst pipe in Katy, or a roof that didn't survive a Houston storm — we show up. Every time.</p>
+    <h2 class="cta-h2">Ready When <span>Texas</span> Needs Us</h2>
+    <p class="cta-body">From urgent repairs to planned installs — when Texas needs help, we show up. Every time.</p>
     <div class="cta-btns">
       <a href="{{ route('quote') }}" class="btn-hero-orange">Get Your Free Quote <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
       <a href="tel:7130000000" class="btn-cta-outline">📞 (713) 000-0000</a>
     </div>
-    <div class="cta-trust"><span class="cta-trust-item">Licensed & Insured</span><span class="cta-trust-item">500+ Five-Star Reviews</span><span class="cta-trust-item">15+ Years in Houston</span><span class="cta-trust-item">No Trip Fee</span></div>
+    <div class="cta-trust"><span class="cta-trust-item">Licensed & Insured</span><span class="cta-trust-item">5-Star Rated</span><span class="cta-trust-item">Texas Coverage</span><span class="cta-trust-item">Fast Response</span></div>
   </div>
 </div>
 @endsection
