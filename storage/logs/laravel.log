@@ -2280,3 +2280,87 @@
 #10 /home/ahmad/Downloads/new lone star/lone_star/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
 #11 {main}
 "} 
+[2026-03-10 08:09:42] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:212)
+[stacktrace]
+#0 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(137): Illuminate\\Log\\LogManager->resolve()
+#1 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(124): Illuminate\\Log\\LogManager->get()
+#2 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(681): Illuminate\\Log\\LogManager->driver()
+#3 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(317): Illuminate\\Log\\LogManager->error()
+#4 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(278): Illuminate\\Foundation\\Exceptions\\Handler->reportThrowable()
+#5 /home/ahmad/Downloads/new lone star/lone_star/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report()
+#6 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(523): NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler->report()
+#7 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(203): Illuminate\\Foundation\\Console\\Kernel->reportException()
+#8 /home/ahmad/Downloads/new lone star/lone_star/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#9 {main}
+"} 
+[2026-03-10 08:09:42] laravel.ERROR: The "--columns" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--columns\" option does not exist. at /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Input/ArgvInput.php:223)
+[stacktrace]
+#0 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Input/ArgvInput.php(150): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption()
+#1 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Input/ArgvInput.php(85): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption()
+#2 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Input/ArgvInput.php(74): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#3 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Input/Input.php(56): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Command/Command.php(285): Symfony\\Component\\Console\\Input\\Input->bind()
+#5 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#6 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Application.php(1121): Illuminate\\Console\\Command->run()
+#7 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#9 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#10 /home/ahmad/Downloads/new lone star/lone_star/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#11 {main}
+"} 
+[2026-03-10 08:09:47] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:212)
+[stacktrace]
+#0 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(137): Illuminate\\Log\\LogManager->resolve()
+#1 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(124): Illuminate\\Log\\LogManager->get()
+#2 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(681): Illuminate\\Log\\LogManager->driver()
+#3 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(317): Illuminate\\Log\\LogManager->error()
+#4 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(278): Illuminate\\Foundation\\Exceptions\\Handler->reportThrowable()
+#5 /home/ahmad/Downloads/new lone star/lone_star/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report()
+#6 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(523): NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler->report()
+#7 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(203): Illuminate\\Foundation\\Console\\Kernel->reportException()
+#8 /home/ahmad/Downloads/new lone star/lone_star/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#9 {main}
+"} 
+[2026-03-10 08:09:47] laravel.ERROR: The "--columns" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--columns\" option does not exist. at /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Input/ArgvInput.php:223)
+[stacktrace]
+#0 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Input/ArgvInput.php(150): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption()
+#1 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Input/ArgvInput.php(85): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption()
+#2 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Input/ArgvInput.php(74): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#3 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Input/Input.php(56): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Command/Command.php(285): Symfony\\Component\\Console\\Input\\Input->bind()
+#5 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#6 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Application.php(1121): Illuminate\\Console\\Command->run()
+#7 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#9 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#10 /home/ahmad/Downloads/new lone star/lone_star/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#11 {main}
+"} 
+[2026-03-10 08:09:51] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:212)
+[stacktrace]
+#0 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(137): Illuminate\\Log\\LogManager->resolve()
+#1 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(124): Illuminate\\Log\\LogManager->get()
+#2 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(681): Illuminate\\Log\\LogManager->driver()
+#3 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(317): Illuminate\\Log\\LogManager->error()
+#4 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(278): Illuminate\\Foundation\\Exceptions\\Handler->reportThrowable()
+#5 /home/ahmad/Downloads/new lone star/lone_star/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php(46): Illuminate\\Foundation\\Exceptions\\Handler->report()
+#6 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(523): NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler->report()
+#7 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(203): Illuminate\\Foundation\\Console\\Kernel->reportException()
+#8 /home/ahmad/Downloads/new lone star/lone_star/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#9 {main}
+"} 
+[2026-03-10 08:09:51] laravel.ERROR: The "--columns" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--columns\" option does not exist. at /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Input/ArgvInput.php:223)
+[stacktrace]
+#0 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Input/ArgvInput.php(150): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption()
+#1 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Input/ArgvInput.php(85): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption()
+#2 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Input/ArgvInput.php(74): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#3 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Input/Input.php(56): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Command/Command.php(285): Symfony\\Component\\Console\\Input\\Input->bind()
+#5 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#6 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Application.php(1121): Illuminate\\Console\\Command->run()
+#7 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 /home/ahmad/Downloads/new lone star/lone_star/vendor/symfony/console/Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#9 /home/ahmad/Downloads/new lone star/lone_star/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#10 /home/ahmad/Downloads/new lone star/lone_star/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#11 {main}
+"} 

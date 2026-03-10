@@ -68,7 +68,9 @@
       this.classList.add('selected');
       var input = document.getElementById('preferred_callback_time');
       if (input) {
-        input.value = this.dataset.callback || this.textContent.trim();
+        var value = this.dataset.callback || this.querySelector('.callback-opt-label')?.textContent.trim() || this.textContent.trim();
+        input.value = value;
+        console.log('Preferred callback time set to:', value); // Debug log
       }
     });
   });
@@ -91,7 +93,8 @@
       if (e.isIntersecting && !counted) {
         counted = true;
         animateCounter(document.getElementById('c1'), 500, 0, 2000);
-        animateCounter(document.getElementById('c2'), 47, 0, 2000);
+        // Texas has 254 counties (use as a statewide coverage indicator)
+        animateCounter(document.getElementById('c2'), 254, 0, 2000);
         animateCounter(document.getElementById('c3'), 15, 0, 2000);
         animateCounter(document.getElementById('c4'), 4.9, 1, 2000);
       }

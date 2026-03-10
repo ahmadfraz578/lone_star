@@ -63,7 +63,7 @@
   <div class="counters-bg"></div>
   <div class="counters-grid">
     <div class="counter-item"><div class="counter-num"><span id="c1">0</span><span class="suffix">+</span></div><div class="counter-label">Jobs Completed</div><div class="counter-sub">Across Texas</div></div>
-    <div class="counter-item"><div class="counter-num"><span id="c2">0</span></div><div class="counter-label">Texas Service Areas</div><div class="counter-sub">Whole Texas coverage</div></div>
+    <div class="counter-item"><div class="counter-num"><span id="c2">0</span></div><div class="counter-label">Texas Counties</div><div class="counter-sub">Whole Texas coverage</div></div>
     <div class="counter-item"><div class="counter-num"><span id="c3">0</span><span class="suffix">+</span></div><div class="counter-label">Years Serving Texas</div><div class="counter-sub">Built for Texas</div></div>
     <div class="counter-item"><div class="counter-num"><span id="c4">0</span></div><div class="counter-label">Stars on Google</div><div class="counter-sub">Average review rating</div></div>
   </div>
@@ -106,7 +106,7 @@
 <div class="home-cta">
   <div class="home-cta-inner">
     <div class="cta-badge"><span class="pulse"></span>Available Right Now</div>
-    <h2 class="cta-h2">Ready When <span>Texas</span> Needs Us</h2>
+    <h2 class="cta-h2">When <span>Texas</span> Needs Us</h2>
     <p class="cta-body">From urgent repairs to planned installs — when Texas needs help, we show up. Every time.</p>
     <div class="cta-btns">
       <a href="{{ route('quote') }}" class="btn-hero-orange">Get Your Free Quote <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
